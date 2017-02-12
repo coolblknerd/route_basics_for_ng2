@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { ProductDetailComponentParam } from './product-detail/product-detail.component';
 import { ProductDescriptionComponent } from './product-description/product-description.component';
 import { SellerInfoComponent } from './seller-info/seller-info.component';
+import { ChatComponent } from './chat/chat.component';
 
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { routing } from './app.routing';
@@ -21,7 +22,8 @@ import { UnsavedChangesGuard } from './unsavedChanges';
     HomeComponent,
     ProductDetailComponentParam,
     ProductDescriptionComponent,
-    SellerInfoComponent
+    SellerInfoComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,

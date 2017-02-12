@@ -1,0 +1,8 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'product',
+  templateUrl: './product-detail.component.html',
+  styleUrls: ['./product-detail.component.css']
+})
+export class ProductDetailComponent { }

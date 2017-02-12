@@ -1,1 +1,5 @@
-<h1 class="product">Product Detail for Product {{ productID }}</h1>
+<div class="product">
+  <h1>Product Details for Product: {{ productID }}</h1>
+  <router-outlet></router-outlet>
+  <p><a [routerLink]="['./seller', 5678]">Seller Info</a></p>
+</div>

@@ -6,16 +6,22 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProductDetailComponentParam } from './product-detail/product-detail.component';
+import { ProductDescriptionComponent } from './product-description/product-description.component';
+import { SellerInfoComponent } from './seller-info/seller-info.component';
 
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { routing } from './app.routing';
+import { LoginGuard } from './login-guard';
+import { UnsavedChangesGuard } from './unsavedChanges';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ProductDetailComponentParam
+    ProductDetailComponentParam,
+    ProductDescriptionComponent,
+    SellerInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +29,7 @@ import { routing } from './app.routing';
     HttpModule,
     routing
   ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }, LoginGuard, UnsavedChangesGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

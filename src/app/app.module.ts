@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductDetailComponentParam } from './product-detail/product-detail.component';
 
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { routing } from './app.routing';
@@ -15,7 +15,7 @@ import { routing } from './app.routing';
   declarations: [
     AppComponent,
     HomeComponent,
-    ProductDetailComponent
+    ProductDetailComponentParam
   ],
   imports: [
     BrowserModule,

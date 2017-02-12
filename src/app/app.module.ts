@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { LuxuryModule } from './luxury/luxury.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -27,6 +28,7 @@ import { UnsavedChangesGuard } from './unsavedChanges';
   ],
   imports: [
     BrowserModule,
+    LuxuryModule,
     FormsModule,
     HttpModule,
     routing
